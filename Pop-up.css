@@ -1,0 +1,50 @@
+/* Подсказка */
+.b-comment header a.name:hover:after
+{
+	position: absolute;
+	content: none;
+	font-size: 11px;
+	padding: 4px 10px 4px 10px;
+	margin-top: -2px;
+	text-align: center;
+	margin-left: 6px;
+	color: white;
+	background: rgba(0,0,0,0.8) !important;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px rgba(0,0,0, 0.9);
+	z-index: 1;
+	white-space: pre;
+	text-align: left;
+}
+/* Stannis 292471 */
+.b-comment[data-user_id="292471"]:not(.tooltipped) header a.name:hover:after {
+	content: "Агент Гномов";
+}
+/* IMMORTALloser 755522 */
+.b-comment[data-user_id="755522"]:not(.tooltipped) header a.name:hover:after {
+	content: "Повелитель Биотуалетов";
+}
+/* Vittorio_OrlandO 287650 */
+.b-comment[data-user_id="287650"]:not(.tooltipped) header a.name:hover:after {
+	content: "Бог | 25 баллов";
+}
+/* Barbaduk 521570 */
+.b-comment[data-user_id="521570"]:not(.tooltipped) header a.name:hover:after {
+	content: "Бог | 23 балла";
+}
+/* Kormary 311507 */
+.b-comment[data-user_id="311507"]:not(.tooltipped) header a.name:hover:after {
+	content: "Ветеран | 12 баллов";
+}
+/* valeriesq 313245 */
+.b-comment[data-user_id="313245"]:not(.tooltipped) header a.name:hover:after {
+	content: "Ветеран | 11 баллов";
+}
+/* DSALTOVSKY 683110 */
+.b-comment[data-user_id="683110"]:not(.tooltipped) header a.name:hover:after {
+	content: "Бог | 25 баллов";
+}
+/* JashOFHop_ 531542 */
+.b-comment[data-user_id="531542"]:not(.tooltipped) header a.name:hover:after {
+	content: "Уже Смешарик | 8 баллов";
+}
