@@ -1,0 +1,201 @@
+/* Клубы в меню */
+.b-club {
+    margin-bottom: 10px;
+    position: relative;
+    background: #161616;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 12px;
+  }
+.b-club:hover {
+  box-shadow: 2px 2px 5px #121212;
+  transition: .6s ease-in-out;
+  border-color: var(--link-color);
+}
+  .b-club .logo {
+  display: none;
+  }
+  .b-club .name-logo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    background-size: cover; 
+    border-radius: 15%;
+    border: 2px solid #ddd;
+  }
+  /* картинка в клубе */
+.b-club::before {
+    content: '';
+    display: block;
+    height: 100px;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    opacity: .6;
+    margin: -12px;
+  }
+.b-club:hover::before {
+  opacity: 1;
+  transition: .6s ease-in-out;
+}
+.b-club .name-logo:hover::before {
+    background-color: #5a5a5ab3;
+    transition: .6s ease-in-out;
+}
+.b-club .name-logo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+  /* Имя клуба ("В центре") */
+  .b-club .name {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px; 
+    text-align: center;
+  }
+  /* Описание клуба */
+  .b-club .info .number, .b-club .info .value, .b-club .info .grouped:after {
+    font-size: 9px;
+    color: #9d9d9d;
+  }
+  .b-club .info {
+    font-size: 10px;
+    margin: 5px;
+  }
+  /* Картинка админов в описании клуба */
+  .b-club .info.author img {
+    border-radius: 10%; 
+  }
+  /* 18+ в клубах */
+  .b-club.censored .name::before {
+    content: "🛇";
+    content: "18+";
+    position: absolute;
+    top: 100px;
+    right: 8px;
+    width: 36px;
+    background-color: #176093;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -1px;
+    text-align: center;
+    transform: translateY(-50%);
+}
+/* Картинки клубов */
+/* Azur Lane */
+.b-club[id='4321']::before {
+    background-image: url(https://i.imgur.com/BUGj0SO_d.webp);
+    background-size: cover;
+  }
+  .b-club[id='4321'] .name-logo::before {
+    background-image: url(https://desu.shikimori.me/system/clubs/main/4321.png);
+  }
+
+img.smiley {
+
+    background-size: 32px 32px;
+
+    overflow: hidden;
+
+    width: 32px;
+
+}
+
+img[src$="/images/smileys/:thumbup:.gif"] {
+
+    background: url(https://kawai.shikimori.me/system/users/x160/292471.png?1517050178) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V:.gif"] {
+
+    background: url(https://cdn.7tv.app/emote/62e2c929e00931fd9546222d/4x.webp) no-repeat; 
+
+    padding-bottom: 32px;
+    padding-left: 42px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V2:.gif"] {
+
+    background: url(https://desu.shikimori.one/system/user_images/original/683110/2506566.jpg) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V3:.gif"] {
+
+    background: url(https://i.pinimg.com/564x/d4/7d/1c/d47d1cffca14403d67fe63b64abbb559.jpg) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:kya:.gif"] {
+
+    background: url(https://desu.shikimori.one/system/images/original/138920.jpg?1704100621) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+
+
+/* Подсказка */
+.b-comment header a.name:hover:after
+{
+	position: absolute;
+	content: none;
+	font-size: 11px;
+	padding: 4px 10px 4px 10px;
+	margin-top: -2px;
+	text-align: center;
+	margin-left: 6px;
+	color: white;
+	background: rgba(0,0,0,0.8) !important;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px rgba(0,0,0, 0.9);
+	z-index: 1;
+	white-space: pre;
+	text-align: left;
+}
+
+/* Barbaduk 521570 */
+.b-comment[data-user_id="521570"]:not(.tooltipped) header a.name:hover:after {
+	content: "Барбадюк🎅🎅🎅";
+}
+.b-comment[data-user_id="521570"]:not(.tooltipped) header a.name, .b-user[id="521570"] a.name, .b-user16>img[src*="521570.png"]+span
+{
+	color: #4df719 !important; 
+}
+
+/* Stannis 292471 */
+.b-comment[data-user_id="292471"]:not(.tooltipped) header a.name:hover:after {
+	content: "Организатор";
+}
+.b-comment[data-user_id="292471"]:not(.tooltipped) header a.name, .b-user[id="292471"] a.name, .b-user16>img[src*="292471.png"]+span
+{
+	color: #1900ff !important; 
+}
