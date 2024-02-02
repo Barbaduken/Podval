@@ -6,7 +6,7 @@
 /* Reddolution 290014 */
 .b-comment[data-user_id="290014"]:not(.tooltipped) header a.name, .b-user[id="290014"] a.name, .b-user16>img[src*="290014.png"]+span
 {
-	color: #7702d9 !important;
+    color: #7702d9 !important;
     color: #1da802 !none;
     color: #ab0307 !none;
 }
@@ -25,7 +25,8 @@
 /* Barbaduk 521570 */
 .b-comment[data-user_id="521570"]:not(.tooltipped) header a.name, .b-user[id="521570"] a.name, .b-user16>img[src*="521570.png"]+span
 {
-    color: #ab0307 !important;
+        color: #1da802 !important;
+	color: #ab0307 !none;
 }
 /* Kormary 311507 */
 .b-comment[data-user_id="311507"]:not(.tooltipped) header a.name, .b-user[id="311507"] a.name, .b-user16>img[src*="311507.png"]+span
