@@ -1,0 +1,71 @@
+/* Замена смайлов */
+
+img.smiley {
+
+    background-size: 32px 32px;
+
+    overflow: hidden;
+
+    width: 32px;
+
+}
+
+img[src$="/images/smileys/:thumbup:.gif"] {
+
+    background: url(https://kawai.shikimori.me/system/users/x160/292471.png?1517050178) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V:.gif"] {
+
+    background: url(https://i1.sndcdn.com/avatars-000588461856-wny59b-t240x240.jpg) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V2:.gif"] {
+
+    background: url(https://i.pinimg.com/564x/6a/b1/94/6ab194fc9ff94c61910e6f2a0d6d91a4.jpg) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:V3:.gif"] {
+
+    background: url(https://i.pinimg.com/564x/d4/7d/1c/d47d1cffca14403d67fe63b64abbb559.jpg) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:s:.gif"] {
+
+    background: url(https://desu.shikimori.one/system/images/original/138913.jpg?1703415478) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
+
+img[src$="/images/smileys/:study3:.gif"] {
+
+    background: url(https://desu.shikimori.one/system/images/original/139204.jpg?1706281974) no-repeat; 
+
+    padding-bottom: 32px;
+
+    background-size: cover;
+
+}
