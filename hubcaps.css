@@ -100,3 +100,37 @@
     left: 5px;
 }
 }
+.d-a {}
+
+.b-comment[data-user_id="287650"] > a::after {
+    background: url(https://desu.shikimori.one/system/images/original/139198.png?1706260578) no-repeat;
+    background-size: 30px 30px;
+    position: absolute;
+    display: block;
+    width: 30px !important;
+    height: 30px !important;
+    content: "";
+    top: -20px;
+    left: 20px;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+
+.b-comment[data-user_id="287650"] > a {
+	position: relative;
+  	font-size: 0;
+}
+
+.b-comment.aside-expanded[data-user_id="287650"] > a::after {
+	margin-left: -250px;
+}  
+
+@media screen and (max-width: 767px) {
+.b-comment[data-user_id="287650"] > a::after {
+	background-size: 22px 22px;
+    width: 22px !important;
+    height: 22px !important;
+    top: -15px;
+    left: 5px;
+}
+}
